@@ -1,8 +1,8 @@
 # practice-problems
 Practice Concepts and Problems.
 
-# concepts
+# practice-problems/concepts
 Practice/Verify concepts
 
-# leetcodeproblems
+# practice-problems/leetcodeproblems
 Solutions to problems from leetcode.com
