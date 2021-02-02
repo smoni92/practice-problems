@@ -1,4 +1,4 @@
-package concepts;
+package concepts.datastructs;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
