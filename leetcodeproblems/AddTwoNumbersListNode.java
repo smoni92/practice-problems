@@ -1,6 +1,6 @@
 package leetcodeproblems;
 
-import leetcodeproblems.pojo.ListNode;
+import pojo.ListNode;
 
 public class AddTwoNumbersListNode {
 
