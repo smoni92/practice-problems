@@ -1,6 +1,6 @@
 package leetcodeproblems.trees;
 
-import leetcodeproblems.pojo.TreeNode;
+import pojo.TreeNode;
 
 public class TrimBinarySearchTree {
 
