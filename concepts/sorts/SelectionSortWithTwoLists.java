@@ -1,4 +1,4 @@
-package concepts.datastructs;
+package concepts.sorts;
 
 import java.util.*;
 
