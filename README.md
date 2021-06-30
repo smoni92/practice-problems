@@ -4,7 +4,7 @@ Practice Concepts and Problems.
 # practice-problems/concepts
 Practice/Verify concepts
 
-# practice-problems/leetcodeproblems
+# practice-problems/leetcode
 Solutions to problems from leetcode.com
 
 # practice-problems/pojo
