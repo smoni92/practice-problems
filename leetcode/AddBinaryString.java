@@ -1,4 +1,4 @@
-package leetcodeproblems;
+package leetcode;
 
 public class AddBinaryString {
 
