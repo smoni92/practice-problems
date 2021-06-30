@@ -1,4 +1,4 @@
-package leetcodeproblems.pojo;
+package pojo;
 
 public class TreeNode {
 
