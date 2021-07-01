@@ -9,6 +9,6 @@ public class Maximum69Number {
 
     public static int maximum69Number(int num) {
 
-        return Integer.valueOf(String.valueOf(num).replaceFirst("6","9"));
+        return Integer.parseInt(String.valueOf(num).replaceFirst("6","9"));
     }
 }
