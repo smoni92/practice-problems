@@ -12,11 +12,11 @@ public class ArrayContainsDuplicate {
         }
 
         Set<Integer> numSet = new HashSet<Integer>();
-        for(int i = 0 ; i < nums.length; i++) {
-            if(numSet.contains(nums[i])) {
+        for (int num : nums) {
+            if (numSet.contains(num)) {
                 return true;
             }
-            numSet.add(nums[i]);
+            numSet.add(num);
         }
         return false;
     }
@@ -37,11 +37,11 @@ public class ArrayContainsDuplicate {
 
     public static void main(String[] args) {
 
-        int nums[] = {1,2,3,4};
+        int[] nums = {1,2,3,4};
         System.out.println(containsDuplicate(nums));
         System.out.println(containsDuplicateImproved(nums));
 
-        int nums1[] = {1,2,1,4};
+        int[] nums1 = {1,2,1,4};
         System.out.println(containsDuplicate(nums1));
         System.out.println(containsDuplicateImproved(nums1));
     }
