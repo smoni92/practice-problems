@@ -37,7 +37,7 @@ public class BinarySearch {
     public static void main(String[] args) {
 
         BinarySearch binarySearch = new BinarySearch();
-        int list[] = {1, 3, 5, 7, 9};
+        int[] list = {1, 3, 5, 7, 9};
         System.out.println("Elements in List: " + Arrays.toString(list));
 
         System.out.println();
