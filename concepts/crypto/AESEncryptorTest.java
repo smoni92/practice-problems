@@ -10,13 +10,12 @@ public class AESEncryptorTest {
 
     public static SecretKey stringToSecretKey(String encodedKey) {
         byte[] decodedKey = Base64.getDecoder().decode(encodedKey);
-        SecretKey originalKey = new SecretKeySpec(decodedKey, 0, decodedKey.length, "AES");
-        return originalKey;
+        return new SecretKeySpec(decodedKey, 0, decodedKey.length, "AES");
     }
 
     public static String encrypt(String pText, SecretKey secretKey) throws Exception {
 
-        String encryptedString = null;
+        String encryptedString;
         try {
             SecretKeySpec skeySpec = new SecretKeySpec(secretKey.getEncoded(), "AES");
             Cipher cipher = Cipher.getInstance("AES");
@@ -32,18 +31,18 @@ public class AESEncryptorTest {
 
     public static String decrypt(String cText, SecretKey secretKey) throws Exception {
 
-        String encryptedString = null;
+        String decryptedString;
         try {
             SecretKeySpec skeySpec = new SecretKeySpec(secretKey.getEncoded(), "AES");
             byte[] encryptText = Base64.getDecoder().decode(cText);
             Cipher cipher = Cipher.getInstance("AES");
             cipher.init(Cipher.DECRYPT_MODE, skeySpec);
-            encryptedString = new String(cipher.doFinal(encryptText));
+            decryptedString = new String(cipher.doFinal(encryptText));
         } catch (Exception e) {
             e.printStackTrace();
             return "Error";
         }
-        return encryptedString;
+        return decryptedString;
     }
 
     public static void main(String[] args) throws Exception {
