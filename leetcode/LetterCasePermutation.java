@@ -8,20 +8,23 @@ import java.util.Queue;
 public class LetterCasePermutation {
 
     public static List<String> letterCasePermutation(String S) {
-        if(S == null) {
+        if (S == null) {
             return new ArrayList<>();
         }
 
         Queue<String> queue = new LinkedList<>();
         queue.offer(S);
 
-        for(int i = 0; i < S.length(); i++) {
-            if(Character.isDigit(S.charAt(i)))
+        for (int i = 0; i < S.length(); i++) {
+            if (Character.isDigit(S.charAt(i)))
                 continue;
 
             int size = queue.size();
-            for(int j = 0; j < size; j++) {
+            for (int j = 0; j < size; j++) {
                 String currString = queue.poll();
+                if (currString == null) {
+                    break;
+                }
                 char[] currArr = currString.toCharArray();
 
                 currArr[i] = Character.toUpperCase(currArr[i]);
