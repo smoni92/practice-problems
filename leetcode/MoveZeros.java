@@ -6,10 +6,9 @@ public class MoveZeros {
 
     public static void moveZeroes(int[] nums) {
 
-        int currIndex = 0, zeroIndex = -1;
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] != 0) {
-                currIndex = i;
+        int zeroIndex = -1;
+        for (int currIndex = 0; currIndex < nums.length; currIndex++) {
+            if (nums[currIndex] != 0) {
                 if (zeroIndex != -1 && zeroIndex < currIndex) {
                     nums[zeroIndex] = nums[currIndex];
                     nums[currIndex] = 0;
@@ -17,7 +16,7 @@ public class MoveZeros {
                 }
             } else {
                 if (zeroIndex == -1) {
-                    zeroIndex = i;
+                    zeroIndex = currIndex;
                 }
             }
         }
