@@ -17,7 +17,6 @@ public class StringContainsBinaryCodesK {
                 }
             }
         }
-
         return false;
     }
 }
