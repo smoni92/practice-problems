@@ -9,14 +9,14 @@ public class DateTest {
 
     public static void main(String[] args) {
 
-        Date currentdate = new Date();
-        System.out.println(currentdate);
+        Date currentDate = new Date();
+        System.out.println(currentDate);
 
-        Date pastdate = new Date(currentdate.getTime() - 1000*60);
-        System.out.println(pastdate);
+        Date pastDate = new Date(currentDate.getTime() - 1000*60);
+        System.out.println(pastDate);
 
-        System.out.println("Compare To: " + currentdate.compareTo(pastdate));
-        System.out.println("Diff: " + TimeUnit.MILLISECONDS.toMillis(currentdate.getTime() - pastdate.getTime()));
+        System.out.println("Compare To: " + currentDate.compareTo(pastDate));
+        System.out.println("Diff: " + TimeUnit.MILLISECONDS.toMillis(currentDate.getTime() - pastDate.getTime()));
 
         Calendar calendar = Calendar.getInstance();
         calendar.add(Calendar.MILLISECOND, -1000*60);
