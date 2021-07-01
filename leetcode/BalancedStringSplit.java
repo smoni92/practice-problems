@@ -13,7 +13,7 @@ public class BalancedStringSplit {
     public static int balancedStringSplit(String s) {
         int result = 0;
 
-        Stack<Character> stack = new Stack();
+        Stack<Character> stack = new Stack<>();
 
         for (Character ch : s.toCharArray()) {
             if (stack.isEmpty() || stack.peek() == ch)
