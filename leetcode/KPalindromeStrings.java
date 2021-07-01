@@ -36,11 +36,7 @@ public class KPalindromeStrings {
             }
         }
 
-        if (count <= k) {
-            return true;
-        }
-
-        return false;
+        return count <= k;
     }
 
     public static void main(String[] args) {
