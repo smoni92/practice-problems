@@ -10,14 +10,14 @@ public class SwapNodesInListNode {
             return head;
         }
 
-        ListNode root = head, firstNode = null, lastNode = null, tmpNode = null;
+        ListNode root = head;
         int i = 0, j = 0;
         while(head.next != null && i < k-1) {
             head = head.next;
             i++;
         }
 
-        firstNode = head;
+        ListNode firstNode = head;
         while(head.next != null) {
             head = head.next;
             i++;
@@ -29,9 +29,8 @@ public class SwapNodesInListNode {
             j++;
         }
 
-        lastNode = head;
-
-        tmpNode = new ListNode(lastNode.val);
+        ListNode lastNode = head;
+        ListNode tmpNode = new ListNode(lastNode.val);
         lastNode.val = firstNode.val;
         firstNode.val = tmpNode.val;
 
