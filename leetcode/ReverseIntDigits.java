@@ -3,7 +3,7 @@ package leetcode;
 public class ReverseIntDigits {
 
     public static int reverse(int x) {
-        String ans = null;
+        String ans;
         if (x < 0) {
             ans = new StringBuilder(String.valueOf(-x)).append("-").reverse().toString();
         } else {
