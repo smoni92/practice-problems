@@ -15,6 +15,6 @@ public class DefangIPAddress {
                 sb.append(IPAddress.charAt(i));
             }
         }
-        System.out.println(sb.toString());
+        System.out.println(sb);
     }
 }
