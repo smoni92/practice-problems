@@ -5,14 +5,13 @@ import java.net.URL;
 
 public class URLTest {
 
+    /** Output:
+     * URL http://google.com is valid
+     * URL http://index.html is valid
+     * java.net.MalformedURLException: no protocol: /index.html
+     * java.net.MalformedURLException: unknown protocol: t3
+     */
     public static void main(String[] args) {
-
-        /** Output:
-         * URL http://google.com is valid
-         * URL http://index.html is valid
-         * java.net.MalformedURLException: no protocol: /index.html
-         * java.net.MalformedURLException: unknown protocol: t3
-         */
 
         String[] urlStrings = {"http://google.com",
                 "/index.html",
