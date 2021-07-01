@@ -1,14 +1,15 @@
 package leetcode;
 
 import java.math.BigInteger;
+import java.util.Arrays;
 
 public class PlusOne {
 
     public static void main(String[] args) {
         int[] digits = {1, 2, 3, 4};
-        System.out.println(plusOne(digits));
+        System.out.println(Arrays.toString(plusOne(digits)));
 
-        System.out.println(plusOne2(digits));
+        System.out.println(Arrays.toString(plusOne2(digits)));
     }
 
     public static int[] plusOne(int[] digits) {
@@ -34,7 +35,7 @@ public class PlusOne {
             digits[i] = digits[i] > 9 ? digits[i] % 10 : digits[i];
         }
 
-        int[] result = null;
+        int[] result;
         if(carryForward > 0) {
             result = new int[digits.length + 1];
             System.arraycopy(digits, 0, result, 1, digits.length);
