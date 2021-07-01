@@ -15,7 +15,7 @@ public class NumberOfArithmeticSlices {
         }
 
         Map<Integer, List<Integer>> countMap = new HashMap<Integer, List<Integer>>();
-        int prevDiff = -1, prevIndex = -1;
+        int prevDiff = -1;
         for (int i = 0; i < A.length - 1; i++) {
             int diff = A[i + 1] - A[i];
             if (countMap.containsKey(diff)) {
