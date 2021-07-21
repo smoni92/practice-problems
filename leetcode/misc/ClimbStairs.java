@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.misc;
 
 public class ClimbStairs {
 
